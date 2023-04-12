@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+  /* border: 1px solid red; */
+}
+.about-me {
+  background-color: black;
+  color: rgba(251, 251, 251);
+}
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(141, 139, 139),
+    rgba(231, 226, 226, 0.1)
+  );
+  overflow: hidden;
+}
+
+header {
+  position: relative;
+  height: 35vh;
+  width: 100%;
+}
+.profile-pic img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: block;
+  margin: 25px auto 0;
+  box-shadow: 3px 3px;
+}
+.profile-pic {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+  gap: 30px;
+}
+.profile-pic h2 {
+  color: rgba(251, 251, 251);
+}
+.projects-h2 {
+  background-color: black;
+  color: rgba(251, 251, 251);
+}
+.left-section {
+  width: 30%;
+  justify-content: start;
+  border: 3px solid rgb(0, 0, 0);
+}
+.left-section h2 {
+  text-align: center;
+}
+.right-section {
+  width: 70%;
+  justify-content: start;
+  border: 3px solid rgb(0, 0, 0);
+}
+.right-section h2 {
+  text-align: center;
+}
+li {
+  display: inline-block;
+  background-color: black;
+}
+li a {
+  text-decoration: none;
+  color: inherit;
+  padding: 5px;
+  color: rgba(251, 251, 251);
+}
+
+main {
+  position: relative;
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+}
+p {
+  padding: 10px;
+  font-size: 18px;
+}
+.top-left {
+  display: flex;
+  justify-content: start;
+  margin-left: 10px;
+  position: absolute;
+  top: 10px;
+}
+.top-left h2 {
+  background-color: black;
+  color: rgba(251, 251, 251);
+  padding: 5px;
+}
+.top-right {
+  display: flex;
+  justify-content: end;
+  gap: 25px;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.social-media {
+  display: flex;
+  justify-content: end;
+  font-size: 25px;
+  gap: 15px;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+i {
+  color: rgba(59, 58, 58, 0.893);
+}
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+.projects {
+  width: 100%;
+}
+.projects img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  image-rendering: auto;
+  display: block;
+  margin: auto;
+}
+.projects h4 {
+  text-align: center;
+  padding-top: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 400px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Caveat", cursive;
+    font-size: 25px;
+    /* border: 1px solid red; */
+  }
+
+  .top-right {
+    display: none;
+  }
+
+  .profile-pic {
+    display: flex;
+    align-items: start;
+    width: 25%;
+    padding-top: 45px;
+    gap: 22px;
+  }
+  .profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 10px;
+    bottom: 60px;
+    box-shadow: 3px 3px;
+  }
+  .profile-pic-span {
+    position: absolute;
+    top: 5px;
+    left: 45%;
+  }
+  .social-media {
+    display: flex;
+    justify-content: end;
+    font-size: 25px;
+    gap: 15px;
+    padding-right: 10px;
+    padding-top: 20px;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+  }
+  .left-section {
+    display: none;
+  }
+  .right-section {
+    width: 100%;
+  }
+  .projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-evenly;
+  }
+  .projects {
+    width: 23%;
+  }
+}
