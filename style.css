@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Caveat", cursive;
-  font-size: 30px;
+  font-family: "Dongle", cursive;
   /* border: 1px solid red; */
 }
 .about-me {
   background-color: black;
-  color: rgba(251, 251, 251);
+  color: rgba(234, 255, 1, 0.904);
+  font-size: 30px;
 }
 body {
   background-image: linear-gradient(
@@ -32,7 +32,7 @@ header {
   border: 1px solid black;
   border-radius: 50%;
   display: block;
-  margin: 25px auto 0;
+  margin: 10px auto 0;
   box-shadow: 3px 3px;
 }
 .profile-pic {
@@ -41,13 +41,17 @@ header {
   width: 40%;
   margin: auto;
   gap: 30px;
+  font-size: 25px;
 }
 .profile-pic h2 {
-  color: rgba(251, 251, 251);
+  color: rgba(234, 255, 1, 0.904);
+  font-size: 40px;
 }
+
 .projects-h2 {
   background-color: black;
-  color: rgba(251, 251, 251);
+  color: rgba(234, 255, 1, 0.904);
+  font-size: 30px;
 }
 .left-section {
   width: 30%;
@@ -85,7 +89,7 @@ main {
 }
 p {
   padding: 10px;
-  font-size: 18px;
+  font-size: 22px;
 }
 .top-left {
   display: flex;
@@ -95,17 +99,25 @@ p {
   top: 10px;
 }
 .top-left h2 {
+  color: rgba(234, 255, 1, 0.904);
+  padding: 2px;
   background-color: black;
-  color: rgba(251, 251, 251);
-  padding: 5px;
+  border-radius: 20px;
+  font-size: 35px;
 }
 .top-right {
   display: flex;
   justify-content: end;
-  gap: 25px;
+  gap: 10px;
   margin-top: 10px;
   margin-right: 10px;
-  font-size: 20px;
+  font-size: 30px;
+}
+.top-right li {
+  border-radius: 20px;
+}
+.top-right li a {
+  color: rgba(234, 255, 1, 0.904);
 }
 .social-media {
   display: flex;
@@ -125,6 +137,8 @@ i {
   gap: 20px;
   padding: 10px;
   justify-content: space-evenly;
+  width: 50%;
+  height: auto;
 }
 .projects {
   width: 100%;
@@ -140,6 +154,7 @@ i {
 .projects h4 {
   text-align: center;
   padding-top: 5px;
+  font-size: 20px;
 }
 
 /* RESPONSIVE */
