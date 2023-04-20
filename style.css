@@ -15,14 +15,14 @@
 }
 body {
   overflow: hidden;
-  max-width: 100%;
-  height: auto;
   display: flex;
   background-image: url(image/wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   image-rendering: crisp-edges;
-  z-index: -5;
+  z-index: -1;
+  max-width: 100%;
+  height: auto;
 }
 
 header {
@@ -107,7 +107,7 @@ p {
 
 i {
   color: whitesmoke;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 .projects-container {
   display: flex;
@@ -150,5 +150,83 @@ i {
 }
 
 /* RESPONSIVE */
-@media (max-width: 390px) {
+@media (max-width: 390px), (max-height: 844px) {
+  body {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-image: url(image/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: crisp-edges;
+    z-index: -1;
+    max-height: 100%;
+    width: auto;
+  }
+  header {
+    position: relative;
+    height: 30%;
+    width: 100%;
+    padding: 10px;
+    border-right: 6px inset rgba(143, 3, 174, 0.256);
+    background-color: rgba(69, 14, 172, 0.816);
+    border-bottom: 6px inset rgba(143, 3, 174, 0.256);
+  }
+  .header-info {
+    display: block;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 5px;
+    color: whitesmoke;
+    text-align: center;
+  }
+  .header-info h2 {
+    font-size: 35px;
+  }
+  .header-section {
+    display: none;
+  }
+  main {
+    height: 100%;
+    width: 100%;
+    color: white;
+    border-right: 6px inset rgba(116, 2, 142, 0.35);
+  }
+  .projects {
+    width: 20%;
+    height: auto;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    padding: 0;
+    border: 3px inset rgba(143, 3, 174, 0.256);
+  }
+  .projects h4 {
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(49, 11, 85, 0.705);
+    border: 3px inset rgba(143, 3, 174, 0.256);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .projects-h2 {
+    font-size: 35px;
+  }
+  .social-media {
+    font-size: 20px;
+  }
 }
