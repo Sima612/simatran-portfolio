@@ -20,6 +20,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   image-rendering: crisp-edges;
+  background-position: center;
   z-index: -1;
   max-width: 100%;
   height: auto;
@@ -159,9 +160,10 @@ i {
     background-repeat: no-repeat;
     background-size: cover;
     image-rendering: crisp-edges;
-    z-index: -1;
+    background-attachment: fixed;
+    background-position: center;
     max-height: 100%;
-    width: auto;
+    z-index: -1;
   }
   header {
     position: relative;
@@ -193,6 +195,7 @@ i {
     width: 100%;
     color: white;
     border-right: 6px inset rgba(116, 2, 142, 0.35);
+    background-color: rgba(69, 14, 172, 0.816);
   }
   .projects {
     width: 20%;
