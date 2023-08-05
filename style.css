@@ -228,6 +228,15 @@ i {
     border-bottom: 6px inset rgba(143, 3, 174, 0.256);
     border-radius: 0;
   }
+  .circle-1 {
+    display: none;
+  }
+  .circle-2 {
+    display: none;
+  }
+  .circle-3 {
+    display: none;
+  }
   .wallpaper {
     position: absolute;
     background-repeat: no-repeat;
