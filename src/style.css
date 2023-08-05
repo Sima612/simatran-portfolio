@@ -12,31 +12,63 @@
   color: rgba(203, 123, 240, 0.959);
   font-size: 40px;
   border-radius: 25px;
+  border: 2px solid whitesmoke;
 }
-body {
-  overflow: hidden;
-  display: flex;
-  background-image: url(image/wallpaper.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  image-rendering: crisp-edges;
-  background-position: center;
-  z-index: -1;
-  max-width: 100%;
-  height: auto;
-}
-
 header {
+  padding: 2rem;
+  border-radius: 5%;
+  height: auto;
+  top: 0;
   position: relative;
-  height: 100%;
-  width: 30%;
-  padding: 10px;
+  height: 30%;
+  width: 40%;
   border-right: 6px inset rgba(143, 3, 174, 0.256);
   background-color: rgba(69, 14, 172, 0.816);
   border-bottom: 6px inset rgba(143, 3, 174, 0.256);
 }
+.circle-1 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 6px inset rgba(143, 3, 174, 0.256);
+  background-color: rgba(69, 14, 172, 0.816);
+}
+.circle-2 {
+  position: absolute;
+  bottom: -40rem;
+  left: 0;
+  width: 465px;
+  height: 465px;
+  border-radius: 50%;
+  border: 6px inset rgba(143, 3, 174, 0.256);
+  background-color: rgba(69, 14, 172, 0.816);
+}
+.circle-3 {
+  position: absolute;
+  right: -63rem;
+  top: 27rem;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  border: 6px inset rgba(143, 3, 174, 0.256);
+  background-color: rgba(69, 14, 172, 0.816);
+}
+.wallpaper {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  image-rendering: crisp-edges;
+  background-position: center;
+  z-index: -1;
+  bottom: 18%;
+  left: 60%;
+}
+.wallpaper img {
+  border-radius: 30%;
+}
 
-header img {
+picture img {
   width: 25%;
   height: 25%;
   border-radius: 50%;
@@ -59,49 +91,80 @@ header img {
   font-size: 45px;
 }
 
+.list-elements {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+li {
+  list-style: none;
+}
+.list-elements > li > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .projects-h2 {
   background-color: rgba(69, 14, 172, 0.816);
   color: rgba(203, 123, 240, 0.959);
   font-size: 40px;
-  border-bottom: 6px inset rgba(143, 3, 174, 0.256);
+  width: 100%;
+  border-bottom: 4px solid whitesmoke;
 }
 .header-section {
-  width: 100%;
+  width: 75%;
   height: 100%;
-  justify-content: start;
+  margin: auto;
 }
 .header-section h2 {
   text-align: center;
   position: relative;
 }
-.main-section {
+.header-section > p {
   width: 100%;
-  height: 100%;
+  padding-left: 1rem;
+}
+.main-section {
+  position: absolute;
+  left: 33.3%;
+  bottom: 20%;
+  width: 100%;
+  z-index: -1;
   justify-content: start;
-  border-bottom: 6px inset rgba(116, 2, 142, 0.35);
+  border: 3px inset rgba(116, 2, 142, 0.35);
+  z-index: 1;
 }
 .main-section h2 {
   text-align: center;
 }
 
-main {
-  height: 100vh;
-  width: 70%;
+.main-container {
+  position: relative;
+  height: 70vh;
+  width: 75%;
   display: flex;
   color: white;
-  border-right: 6px inset rgba(116, 2, 142, 0.35);
+  border-left: 6px inset rgba(116, 2, 142, 0.35);
+  border-bottom: 6px inset rgba(143, 3, 174, 0.256);
+  border-radius: 30%;
 }
 p {
   font-size: 22px;
   color: white;
+  margin-top: 1rem;
 }
 
 .social-media {
   font-size: 25px;
   text-align: center;
-  width: 100%;
+  width: 30%;
   height: auto;
   display: flex;
+  margin: auto;
   justify-content: center;
   gap: 10px;
 }
@@ -113,16 +176,20 @@ i {
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 3rem;
   width: 100%;
-  height: 100%;
-  justify-content: space-evenly;
+  height: auto;
+  justify-content: start;
   padding-top: 10px;
+  padding-left: 1rem;
+  background-color: rgba(69, 14, 172, 0.816);
+  border-bottom: 6px inset rgba(143, 3, 174, 0.256);
 }
 .projects {
   width: 20%;
   height: auto;
   padding-top: 0;
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,7 +209,7 @@ i {
   font-size: 25px;
   background-color: rgba(49, 11, 85, 0.705);
   border: 3px inset rgba(143, 3, 174, 0.256);
-  width: 50%;
+  width: 100%;
   padding: 0;
   margin: 0;
   border-radius: 20px;
@@ -151,32 +218,36 @@ i {
 }
 
 /* RESPONSIVE */
-@media (max-width: 390px), (max-height: 844px) {
-  body {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    background-image: url(image/wallpaper.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    image-rendering: crisp-edges;
-    background-attachment: fixed;
-    background-position: center;
-    max-height: 100%;
-    z-index: -1;
-  }
+@media (max-width: 600px), (max-height: 844px) {
   header {
     position: relative;
-    height: 30%;
+    height: 20%;
     width: 100%;
-    padding: 10px;
     border-right: 6px inset rgba(143, 3, 174, 0.256);
     background-color: rgba(69, 14, 172, 0.816);
     border-bottom: 6px inset rgba(143, 3, 174, 0.256);
+    border-radius: 0;
+  }
+  .wallpaper {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    image-rendering: crisp-edges;
+    background-position: center;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+  .wallpaper img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10%;
   }
   .header-info {
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    height: auto;
     width: 100%;
     margin: 0 auto;
     font-size: 18px;
@@ -186,19 +257,49 @@ i {
   }
   .header-info h2 {
     font-size: 35px;
+    width: 100%;
   }
   .header-section {
-    display: none;
+    width: 100%;
   }
-  main {
-    height: 100%;
+  .header-section > p {
+    padding: 1rem;
+  }
+  .list-elements {
+    display: flex;
+    justify-content: space-between;
+  }
+  .list-elements > li > img {
+    width: 50px;
+    height: 50px;
+  }
+  .main-container {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+  }
+  .main-section {
+    position: relative;
+    left: 0;
+    top: 1%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     width: 100%;
     color: white;
     border-right: 6px inset rgba(116, 2, 142, 0.35);
     background-color: rgba(69, 14, 172, 0.816);
   }
+  .projects-container {
+    display: flex;
+    justify-content: start;
+    gap: 2.2rem;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
   .projects {
-    width: 20%;
+    width: 25%;
     height: auto;
     padding-top: 0;
     display: flex;
