@@ -109,7 +109,8 @@ li {
 .projects-h2 {
   background-color: rgba(69, 14, 172, 0.816);
   color: whitesmoke;
-  font-size: 2em;
+  border-bottom: 0.1em solid whitesmoke;
+  font-size: 2.5em;
   /* width: 100%; */
 }
 .header-section {
