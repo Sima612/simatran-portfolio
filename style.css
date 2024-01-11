@@ -59,7 +59,7 @@ header {
 }
 .wallpaper {
   position: absolute;
-  background-image: url("image/wallpaper.jpg");
+  background-image: url("./image/wallpaper.jpg");
   background-size: contain;
   image-rendering: crisp-edges;
   z-index: -1;
