@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const timelineData = [
     {
-      date: "July 2020 - October 2023",
+      date: "October 2023 - Present",
       title: "YSI DIAMOND, Production Specialist",
       description:
         "Experienced professional adept at optimizing production flow and ensuring operational efficiency across diverse merchandise categories. Committed to upholding exceptional service standards and prioritizing guest satisfaction as a cornerstone of business success. Proven track record of driving sales growth through meticulous monitoring and reporting, as well as effective collaboration to enhance the overall customer experience.",
